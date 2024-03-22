@@ -21,8 +21,6 @@
 		CF76292C2BA9029B008B68D5 /* EmptyNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76291D2BA9029B008B68D5 /* EmptyNavigationLink.swift */; };
 		CF76292D2BA9029B008B68D5 /* FoursquareRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629202BA9029B008B68D5 /* FoursquareRouter.swift */; };
 		CF76292E2BA9029B008B68D5 /* FoursquareNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629212BA9029B008B68D5 /* FoursquareNetworkProvider.swift */; };
-		CF76292F2BA9029B008B68D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629232BA9029B008B68D5 /* User.swift */; };
-		CF7629302BA9029B008B68D5 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629242BA9029B008B68D5 /* Repo.swift */; };
 		CF76293C2BA90D57008B68D5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76293B2BA90D57008B68D5 /* RegistrationView.swift */; };
 		CF76293E2BA90D70008B68D5 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76293D2BA90D70008B68D5 /* RegistrationViewModel.swift */; };
 		CF7629412BA90DE4008B68D5 /* FieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629402BA90DE4008B68D5 /* FieldValidator.swift */; };
@@ -64,8 +62,6 @@
 		CF76291D2BA9029B008B68D5 /* EmptyNavigationLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyNavigationLink.swift; sourceTree = "<group>"; };
 		CF7629202BA9029B008B68D5 /* FoursquareRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareRouter.swift; sourceTree = "<group>"; };
 		CF7629212BA9029B008B68D5 /* FoursquareNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareNetworkProvider.swift; sourceTree = "<group>"; };
-		CF7629232BA9029B008B68D5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		CF7629242BA9029B008B68D5 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		CF76293B2BA90D57008B68D5 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		CF76293D2BA90D70008B68D5 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		CF7629402BA90DE4008B68D5 /* FieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidator.swift; sourceTree = "<group>"; };
@@ -203,7 +199,6 @@
 			children = (
 				CFB248BC2BAD34B20079BF86 /* LocalStorage */,
 				CF76291F2BA9029B008B68D5 /* Networking */,
-				CF7629222BA9029B008B68D5 /* Models */,
 				CFB248CC2BAD3D1D0079BF86 /* Constants.swift */,
 			);
 			path = Shared;
@@ -216,15 +211,6 @@
 				CF7629212BA9029B008B68D5 /* FoursquareNetworkProvider.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		CF7629222BA9029B008B68D5 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CF7629232BA9029B008B68D5 /* User.swift */,
-				CF7629242BA9029B008B68D5 /* Repo.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		CF7629362BA90B4D008B68D5 /* Modules */ = {
@@ -542,7 +528,6 @@
 				CFB248CD2BAD3D1D0079BF86 /* Constants.swift in Sources */,
 				CFB248A22BAD18C30079BF86 /* MapView.swift in Sources */,
 				CFB248A42BAD19650079BF86 /* LocationManager.swift in Sources */,
-				CF76292F2BA9029B008B68D5 /* User.swift in Sources */,
 				CFB2489A2BAD17E00079BF86 /* Venue.swift in Sources */,
 				CF7629262BA9029B008B68D5 /* NetworkUtils.swift in Sources */,
 				CF76292C2BA9029B008B68D5 /* EmptyNavigationLink.swift in Sources */,
@@ -554,7 +539,6 @@
 				CF7629052BA901EB008B68D5 /* OnboardingView.swift in Sources */,
 				CF7629032BA901EB008B68D5 /* CFH_TechTask_AmrMagdyApp.swift in Sources */,
 				CF7629292BA9029B008B68D5 /* Publisher+Utils.swift in Sources */,
-				CF7629302BA9029B008B68D5 /* Repo.swift in Sources */,
 				CF76292A2BA9029B008B68D5 /* Binding+Utils.swift in Sources */,
 				CFB248A82BAD20320079BF86 /* HomeView.swift in Sources */,
 				CFB248BE2BAD34C00079BF86 /* LocalStorageService.swift in Sources */,

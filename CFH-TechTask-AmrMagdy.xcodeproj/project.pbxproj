@@ -8,17 +8,88 @@
 
 /* Begin PBXBuildFile section */
 		CF7629032BA901EB008B68D5 /* CFH_TechTask_AmrMagdyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629022BA901EB008B68D5 /* CFH_TechTask_AmrMagdyApp.swift */; };
-		CF7629052BA901EB008B68D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629042BA901EB008B68D5 /* ContentView.swift */; };
+		CF7629052BA901EB008B68D5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629042BA901EB008B68D5 /* OnboardingView.swift */; };
 		CF7629072BA901ED008B68D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7629062BA901ED008B68D5 /* Assets.xcassets */; };
 		CF76290A2BA901ED008B68D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7629092BA901ED008B68D5 /* Preview Assets.xcassets */; };
+		CF7629252BA9029B008B68D5 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629132BA9029B008B68D5 /* NetworkClient.swift */; };
+		CF7629262BA9029B008B68D5 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629142BA9029B008B68D5 /* NetworkUtils.swift */; };
+		CF7629272BA9029B008B68D5 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629152BA9029B008B68D5 /* NetworkProvider.swift */; };
+		CF7629282BA9029B008B68D5 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629172BA9029B008B68D5 /* Container.swift */; };
+		CF7629292BA9029B008B68D5 /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629192BA9029B008B68D5 /* Publisher+Utils.swift */; };
+		CF76292A2BA9029B008B68D5 /* Binding+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76291A2BA9029B008B68D5 /* Binding+Utils.swift */; };
+		CF76292B2BA9029B008B68D5 /* View+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76291B2BA9029B008B68D5 /* View+Utils.swift */; };
+		CF76292C2BA9029B008B68D5 /* EmptyNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76291D2BA9029B008B68D5 /* EmptyNavigationLink.swift */; };
+		CF76292D2BA9029B008B68D5 /* FoursquareRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629202BA9029B008B68D5 /* FoursquareRouter.swift */; };
+		CF76292E2BA9029B008B68D5 /* FoursquareNetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629212BA9029B008B68D5 /* FoursquareNetworkProvider.swift */; };
+		CF76292F2BA9029B008B68D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629232BA9029B008B68D5 /* User.swift */; };
+		CF7629302BA9029B008B68D5 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629242BA9029B008B68D5 /* Repo.swift */; };
+		CF76293C2BA90D57008B68D5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76293B2BA90D57008B68D5 /* RegistrationView.swift */; };
+		CF76293E2BA90D70008B68D5 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76293D2BA90D70008B68D5 /* RegistrationViewModel.swift */; };
+		CF7629412BA90DE4008B68D5 /* FieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629402BA90DE4008B68D5 /* FieldValidator.swift */; };
+		CF7629472BA90F86008B68D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629462BA90F86008B68D5 /* LoginView.swift */; };
+		CF7629492BA90F9A008B68D5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7629482BA90F9A008B68D5 /* LoginViewModel.swift */; };
+		CFB2489A2BAD17E00079BF86 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248992BAD17E00079BF86 /* Venue.swift */; };
+		CFB2489C2BAD18820079BF86 /* VenuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2489B2BAD18820079BF86 /* VenuesViewModel.swift */; };
+		CFB2489E2BAD189E0079BF86 /* VenuesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2489D2BAD189E0079BF86 /* VenuesView.swift */; };
+		CFB248A02BAD18B40079BF86 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2489F2BAD18B40079BF86 /* ListView.swift */; };
+		CFB248A22BAD18C30079BF86 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248A12BAD18C30079BF86 /* MapView.swift */; };
+		CFB248A42BAD19650079BF86 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248A32BAD19650079BF86 /* LocationManager.swift */; };
+		CFB248A82BAD20320079BF86 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248A72BAD20320079BF86 /* HomeView.swift */; };
+		CFB248AA2BAD25E30079BF86 /* LocationAccessDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248A92BAD25E30079BF86 /* LocationAccessDeniedView.swift */; };
+		CFB248BB2BAD347B0079BF86 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248BA2BAD347B0079BF86 /* UserDTO.swift */; };
+		CFB248BE2BAD34C00079BF86 /* LocalStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248BD2BAD34C00079BF86 /* LocalStorageService.swift */; };
+		CFB248C22BAD34F80079BF86 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248C12BAD34F80079BF86 /* AuthenticationService.swift */; };
+		CFB248C42BAD39310079BF86 /* VenueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248C32BAD39310079BF86 /* VenueDetailView.swift */; };
+		CFB248C92BAD3AE60079BF86 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248C82BAD3AE60079BF86 /* ProfileView.swift */; };
+		CFB248CB2BAD3AF80079BF86 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248CA2BAD3AF80079BF86 /* ProfileViewModel.swift */; };
+		CFB248CD2BAD3D1D0079BF86 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248CC2BAD3D1D0079BF86 /* Constants.swift */; };
+		CFB248D12BAD3E0C0079BF86 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248D02BAD3E0C0079BF86 /* SettingsView.swift */; };
+		CFB248D32BAD3E230079BF86 /* TermsAndConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248D22BAD3E230079BF86 /* TermsAndConditionsView.swift */; };
+		CFB248D82BAD3E730079BF86 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB248D72BAD3E730079BF86 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF7628FF2BA901EB008B68D5 /* CFH-TechTask-AmrMagdy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CFH-TechTask-AmrMagdy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF7629022BA901EB008B68D5 /* CFH_TechTask_AmrMagdyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFH_TechTask_AmrMagdyApp.swift; sourceTree = "<group>"; };
-		CF7629042BA901EB008B68D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF7629042BA901EB008B68D5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		CF7629062BA901ED008B68D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF7629092BA901ED008B68D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF7629132BA9029B008B68D5 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		CF7629142BA9029B008B68D5 /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		CF7629152BA9029B008B68D5 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		CF7629172BA9029B008B68D5 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		CF7629192BA9029B008B68D5 /* Publisher+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
+		CF76291A2BA9029B008B68D5 /* Binding+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Binding+Utils.swift"; sourceTree = "<group>"; };
+		CF76291B2BA9029B008B68D5 /* View+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Utils.swift"; sourceTree = "<group>"; };
+		CF76291D2BA9029B008B68D5 /* EmptyNavigationLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyNavigationLink.swift; sourceTree = "<group>"; };
+		CF7629202BA9029B008B68D5 /* FoursquareRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareRouter.swift; sourceTree = "<group>"; };
+		CF7629212BA9029B008B68D5 /* FoursquareNetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareNetworkProvider.swift; sourceTree = "<group>"; };
+		CF7629232BA9029B008B68D5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CF7629242BA9029B008B68D5 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		CF76293B2BA90D57008B68D5 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		CF76293D2BA90D70008B68D5 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		CF7629402BA90DE4008B68D5 /* FieldValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidator.swift; sourceTree = "<group>"; };
+		CF7629462BA90F86008B68D5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CF7629482BA90F9A008B68D5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CFB248992BAD17E00079BF86 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		CFB2489B2BAD18820079BF86 /* VenuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesViewModel.swift; sourceTree = "<group>"; };
+		CFB2489D2BAD189E0079BF86 /* VenuesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesView.swift; sourceTree = "<group>"; };
+		CFB2489F2BAD18B40079BF86 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		CFB248A12BAD18C30079BF86 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CFB248A32BAD19650079BF86 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CFB248A72BAD20320079BF86 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CFB248A92BAD25E30079BF86 /* LocationAccessDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccessDeniedView.swift; sourceTree = "<group>"; };
+		CFB248B82BAD2A6C0079BF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CFB248BA2BAD347B0079BF86 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		CFB248BD2BAD34C00079BF86 /* LocalStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageService.swift; sourceTree = "<group>"; };
+		CFB248C12BAD34F80079BF86 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		CFB248C32BAD39310079BF86 /* VenueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailView.swift; sourceTree = "<group>"; };
+		CFB248C82BAD3AE60079BF86 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CFB248CA2BAD3AF80079BF86 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		CFB248CC2BAD3D1D0079BF86 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CFB248D02BAD3E0C0079BF86 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CFB248D22BAD3E230079BF86 /* TermsAndConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsView.swift; sourceTree = "<group>"; };
+		CFB248D72BAD3E730079BF86 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +122,10 @@
 		CF7629012BA901EB008B68D5 /* CFH-TechTask-AmrMagdy */ = {
 			isa = PBXGroup;
 			children = (
-				CF7629022BA901EB008B68D5 /* CFH_TechTask_AmrMagdyApp.swift */,
-				CF7629042BA901EB008B68D5 /* ContentView.swift */,
+				CFB248B82BAD2A6C0079BF86 /* Info.plist */,
+				CF7629362BA90B4D008B68D5 /* Modules */,
+				CF7629102BA9029B008B68D5 /* CommonShared */,
+				CF76291E2BA9029B008B68D5 /* Shared */,
 				CF7629062BA901ED008B68D5 /* Assets.xcassets */,
 				CF7629082BA901ED008B68D5 /* Preview Content */,
 			);
@@ -65,6 +138,328 @@
 				CF7629092BA901ED008B68D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF7629102BA9029B008B68D5 /* CommonShared */ = {
+			isa = PBXGroup;
+			children = (
+				CF76293F2BA90DCA008B68D5 /* Validators */,
+				CF7629022BA901EB008B68D5 /* CFH_TechTask_AmrMagdyApp.swift */,
+				CF7629112BA9029B008B68D5 /* Networking */,
+				CF7629162BA9029B008B68D5 /* Utils */,
+				CF7629182BA9029B008B68D5 /* Extensions */,
+				CF76291C2BA9029B008B68D5 /* Views */,
+			);
+			path = CommonShared;
+			sourceTree = "<group>";
+		};
+		CF7629112BA9029B008B68D5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629122BA9029B008B68D5 /* NetworkProvider */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CF7629122BA9029B008B68D5 /* NetworkProvider */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629132BA9029B008B68D5 /* NetworkClient.swift */,
+				CF7629142BA9029B008B68D5 /* NetworkUtils.swift */,
+				CF7629152BA9029B008B68D5 /* NetworkProvider.swift */,
+			);
+			path = NetworkProvider;
+			sourceTree = "<group>";
+		};
+		CF7629162BA9029B008B68D5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629172BA9029B008B68D5 /* Container.swift */,
+				CFB248A32BAD19650079BF86 /* LocationManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CF7629182BA9029B008B68D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629192BA9029B008B68D5 /* Publisher+Utils.swift */,
+				CF76291A2BA9029B008B68D5 /* Binding+Utils.swift */,
+				CF76291B2BA9029B008B68D5 /* View+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF76291C2BA9029B008B68D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF76291D2BA9029B008B68D5 /* EmptyNavigationLink.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF76291E2BA9029B008B68D5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248BC2BAD34B20079BF86 /* LocalStorage */,
+				CF76291F2BA9029B008B68D5 /* Networking */,
+				CF7629222BA9029B008B68D5 /* Models */,
+				CFB248CC2BAD3D1D0079BF86 /* Constants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CF76291F2BA9029B008B68D5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629202BA9029B008B68D5 /* FoursquareRouter.swift */,
+				CF7629212BA9029B008B68D5 /* FoursquareNetworkProvider.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CF7629222BA9029B008B68D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629232BA9029B008B68D5 /* User.swift */,
+				CF7629242BA9029B008B68D5 /* Repo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF7629362BA90B4D008B68D5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248CF2BAD3E010079BF86 /* Settings */,
+				CFB248CE2BAD3DD50079BF86 /* Terms&Condition */,
+				CFB248C52BAD3AA70079BF86 /* Profile */,
+				CFB248BF2BAD34DF0079BF86 /* Auth */,
+				CFB248A52BAD20160079BF86 /* Home */,
+				CFB248952BAD163A0079BF86 /* Venues */,
+				CF7629372BA90B58008B68D5 /* Onboarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CF7629372BA90B58008B68D5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629042BA901EB008B68D5 /* OnboardingView.swift */,
+				CFB248A92BAD25E30079BF86 /* LocationAccessDeniedView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CF7629382BA90CDB008B68D5 /* Registeration  */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248B92BAD34710079BF86 /* Model */,
+				CF76293A2BA90CFA008B68D5 /* ViewModel */,
+				CF7629392BA90CF0008B68D5 /* View */,
+			);
+			path = "Registeration ";
+			sourceTree = "<group>";
+		};
+		CF7629392BA90CF0008B68D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF76293B2BA90D57008B68D5 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF76293A2BA90CFA008B68D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF76293D2BA90D70008B68D5 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF76293F2BA90DCA008B68D5 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629402BA90DE4008B68D5 /* FieldValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		CF7629432BA90F64008B68D5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629452BA90F72008B68D5 /* ViewModel */,
+				CF7629442BA90F6E008B68D5 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CF7629442BA90F6E008B68D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629462BA90F86008B68D5 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF7629452BA90F72008B68D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF7629482BA90F9A008B68D5 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFB248952BAD163A0079BF86 /* Venues */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248982BAD17C20079BF86 /* Model */,
+				CFB248972BAD17B20079BF86 /* View */,
+				CFB248962BAD17AB0079BF86 /* ViewModel */,
+			);
+			path = Venues;
+			sourceTree = "<group>";
+		};
+		CFB248962BAD17AB0079BF86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFB2489B2BAD18820079BF86 /* VenuesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFB248972BAD17B20079BF86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFB2489D2BAD189E0079BF86 /* VenuesView.swift */,
+				CFB2489F2BAD18B40079BF86 /* ListView.swift */,
+				CFB248A12BAD18C30079BF86 /* MapView.swift */,
+				CFB248C32BAD39310079BF86 /* VenueDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFB248982BAD17C20079BF86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248992BAD17E00079BF86 /* Venue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFB248A52BAD20160079BF86 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248A62BAD20220079BF86 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CFB248A62BAD20220079BF86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248A72BAD20320079BF86 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFB248B92BAD34710079BF86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248BA2BAD347B0079BF86 /* UserDTO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFB248BC2BAD34B20079BF86 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248BD2BAD34C00079BF86 /* LocalStorageService.swift */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		CFB248BF2BAD34DF0079BF86 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248C02BAD34EC0079BF86 /* Service */,
+				CF7629382BA90CDB008B68D5 /* Registeration  */,
+				CF7629432BA90F64008B68D5 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		CFB248C02BAD34EC0079BF86 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248C12BAD34F80079BF86 /* AuthenticationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CFB248C52BAD3AA70079BF86 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248C72BAD3ADC0079BF86 /* ViewModel */,
+				CFB248C62BAD3AAB0079BF86 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CFB248C62BAD3AAB0079BF86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248C82BAD3AE60079BF86 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFB248C72BAD3ADC0079BF86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248CA2BAD3AF80079BF86 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFB248CE2BAD3DD50079BF86 /* Terms&Condition */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248D42BAD3E320079BF86 /* View */,
+			);
+			path = "Terms&Condition";
+			sourceTree = "<group>";
+		};
+		CFB248CF2BAD3E010079BF86 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248D62BAD3E6B0079BF86 /* ViewModel */,
+				CFB248D52BAD3E430079BF86 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		CFB248D42BAD3E320079BF86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248D22BAD3E230079BF86 /* TermsAndConditionsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFB248D52BAD3E430079BF86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248D02BAD3E0C0079BF86 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFB248D62BAD3E6B0079BF86 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFB248D72BAD3E730079BF86 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +478,8 @@
 			dependencies = (
 			);
 			name = "CFH-TechTask-AmrMagdy";
+			packageProductDependencies = (
+			);
 			productName = "CFH-TechTask-AmrMagdy";
 			productReference = CF7628FF2BA901EB008B68D5 /* CFH-TechTask-AmrMagdy.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +508,8 @@
 				Base,
 			);
 			mainGroup = CF7628F62BA901EA008B68D5;
+			packageReferences = (
+			);
 			productRefGroup = CF7629002BA901EB008B68D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +536,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF7629052BA901EB008B68D5 /* ContentView.swift in Sources */,
+				CFB248D12BAD3E0C0079BF86 /* SettingsView.swift in Sources */,
+				CFB2489E2BAD189E0079BF86 /* VenuesView.swift in Sources */,
+				CFB248D32BAD3E230079BF86 /* TermsAndConditionsView.swift in Sources */,
+				CFB248CD2BAD3D1D0079BF86 /* Constants.swift in Sources */,
+				CFB248A22BAD18C30079BF86 /* MapView.swift in Sources */,
+				CFB248A42BAD19650079BF86 /* LocationManager.swift in Sources */,
+				CF76292F2BA9029B008B68D5 /* User.swift in Sources */,
+				CFB2489A2BAD17E00079BF86 /* Venue.swift in Sources */,
+				CF7629262BA9029B008B68D5 /* NetworkUtils.swift in Sources */,
+				CF76292C2BA9029B008B68D5 /* EmptyNavigationLink.swift in Sources */,
+				CF7629412BA90DE4008B68D5 /* FieldValidator.swift in Sources */,
+				CF7629282BA9029B008B68D5 /* Container.swift in Sources */,
+				CFB248C22BAD34F80079BF86 /* AuthenticationService.swift in Sources */,
+				CFB248D82BAD3E730079BF86 /* SettingsViewModel.swift in Sources */,
+				CFB248A02BAD18B40079BF86 /* ListView.swift in Sources */,
+				CF7629052BA901EB008B68D5 /* OnboardingView.swift in Sources */,
 				CF7629032BA901EB008B68D5 /* CFH_TechTask_AmrMagdyApp.swift in Sources */,
+				CF7629292BA9029B008B68D5 /* Publisher+Utils.swift in Sources */,
+				CF7629302BA9029B008B68D5 /* Repo.swift in Sources */,
+				CF76292A2BA9029B008B68D5 /* Binding+Utils.swift in Sources */,
+				CFB248A82BAD20320079BF86 /* HomeView.swift in Sources */,
+				CFB248BE2BAD34C00079BF86 /* LocalStorageService.swift in Sources */,
+				CFB248CB2BAD3AF80079BF86 /* ProfileViewModel.swift in Sources */,
+				CFB248AA2BAD25E30079BF86 /* LocationAccessDeniedView.swift in Sources */,
+				CF76293C2BA90D57008B68D5 /* RegistrationView.swift in Sources */,
+				CF7629252BA9029B008B68D5 /* NetworkClient.swift in Sources */,
+				CF7629472BA90F86008B68D5 /* LoginView.swift in Sources */,
+				CFB248BB2BAD347B0079BF86 /* UserDTO.swift in Sources */,
+				CF76292D2BA9029B008B68D5 /* FoursquareRouter.swift in Sources */,
+				CFB248C92BAD3AE60079BF86 /* ProfileView.swift in Sources */,
+				CF76292B2BA9029B008B68D5 /* View+Utils.swift in Sources */,
+				CF76293E2BA90D70008B68D5 /* RegistrationViewModel.swift in Sources */,
+				CF76292E2BA9029B008B68D5 /* FoursquareNetworkProvider.swift in Sources */,
+				CF7629492BA90F9A008B68D5 /* LoginViewModel.swift in Sources */,
+				CFB248C42BAD39310079BF86 /* VenueDetailView.swift in Sources */,
+				CFB2489C2BAD18820079BF86 /* VenuesViewModel.swift in Sources */,
+				CF7629272BA9029B008B68D5 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +703,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CFH-TechTask-AmrMagdy/Preview Content\"";
 				DEVELOPMENT_TEAM = 7AYGAZB269;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CFH-TechTask-AmrMagdy/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to get nearby venues";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to get nearby venues";
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location to get nearby venues";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to get nearby venues";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -285,8 +725,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Amr-Magdy.CFH-TechTask-AmrMagdy";
+				PRODUCT_BUNDLE_IDENTIFIER = "Amr-Magdy.CFH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,12 +739,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CFH-TechTask-AmrMagdy/Preview Content\"";
 				DEVELOPMENT_TEAM = 7AYGAZB269;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CFH-TechTask-AmrMagdy/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to get nearby venues";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to get nearby venues";
+				INFOPLIST_KEY_NSLocationUsageDescription = "We need your location to get nearby venues";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to get nearby venues";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,8 +761,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Amr-Magdy.CFH-TechTask-AmrMagdy";
+				PRODUCT_BUNDLE_IDENTIFIER = "Amr-Magdy.CFH";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

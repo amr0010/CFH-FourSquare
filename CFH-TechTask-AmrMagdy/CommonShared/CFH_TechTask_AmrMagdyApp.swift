@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct CFH_TechTask_AmrMagdyApp: App {
+    @StateObject private var locationManager = LocationManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                OnboardingView()
+                   
+            }
+            .environmentObject(locationManager)
         }
     }
 }
